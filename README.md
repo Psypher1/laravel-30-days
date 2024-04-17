@@ -8,6 +8,7 @@ Section 01: Baby Steps
 1. Hallo, Laravel
 2. Your First Route and Layout
 3. Create A Layout File with Layout Components
+4. Make things pretty with tailwind
 
 Section 02: Eloguent
 

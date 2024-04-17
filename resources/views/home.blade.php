@@ -1,3 +1,9 @@
 <x-layout>
-    <h1>Salut, from home</h1>
+    <x-slot:heading>
+        Salut, from home
+    </x-slot:heading>
+
+    <section>
+        <h2>My content</h2>
+    </section>
 </x-layout>
