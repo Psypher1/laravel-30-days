@@ -11,6 +11,9 @@ A. Section 01: Baby Steps
 3. Create A Layout File with Layout Components
 4. Make things pretty with tailwind
 5. Style currently active nav
+6. View Data and Route Wildcards
+
+We can pass an array of data as the second
 
 B. Section 02: Eloguent
 

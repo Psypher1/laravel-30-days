@@ -3,10 +3,13 @@
         Home
     </x-slot:title>
     <x-slot:heading>
-        Salut, from home
+        Home
     </x-slot:heading>
 
     <section>
-        <h2>My content</h2>
+
+        @foreach ($jobs as $job)
+            <li>{{ $job['title'] }} : Pays {{ $job['salary'] }} per year </li>
+        @endforeach
     </section>
 </x-layout>
