@@ -12,6 +12,7 @@ A. Section 01: Baby Steps
 4. Make things pretty with tailwind
 5. Style currently active nav
 6. View Data and Route Wildcards
+7. Autoloading, Namepaces and Models
 
 We can pass an array of data as the second
 
