@@ -8,8 +8,6 @@
 
     <section>
 
-        @foreach ($jobs as $job)
-            <li>{{ $job['title'] }} : Pays {{ $job['salary'] }} per year </li>
-        @endforeach
+        <h2>My content</h2>
     </section>
 </x-layout>
