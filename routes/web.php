@@ -70,7 +70,8 @@ Route::get('/jobs/{id}', function ($id) {
     //     return $job['id'] == $id
     // })
 
-    $job = Arr::first(Job::all(), fn($job) => $job['id'] == $id);
+    // $job = Arr::first(Job::all(), fn($job) => $job['id'] == $id);
+    $job = Job::find($id);
 
     // dd($job);
     return view('job', ['job' => $job]);
