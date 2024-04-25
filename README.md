@@ -4,7 +4,7 @@ This is my follow along with the 30 Days to Learn Laravel series.
 
 It is structured like this:
 
-A. Section 01: Baby Steps
+-   Section 01: Baby Steps
 
 1. Hallo, Laravel
 2. Your First Route and Layout
@@ -14,9 +14,9 @@ A. Section 01: Baby Steps
 6. View Data and Route Wildcards
 7. Autoloading, Namepaces and Models
 
-We can pass an array of data as the second
+-   Section 02: Eloguent
 
-B. Section 02: Eloguent
+8. Intro to Migrations
 
 The lesson numbers is what I am using to name my branches
 
