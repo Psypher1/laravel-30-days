@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Teacher;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
 use App\Models\Job;
@@ -49,6 +50,8 @@ use App\Models\Job;
 // declare route that listens for a get request to the home page
 // in response , if visited, trigger a funciton that returns a view called welcome
 Route::get('/', function () {
+    // $teachers = Teacher::all();
+    // dd($teachers);
     return view('home');
 });
 
