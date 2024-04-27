@@ -17,6 +17,7 @@ It is structured like this:
 -   Section 02: Eloguent
 
 8. Intro to Migrations
+9. Meet Eloquent
 
 The lesson numbers is what I am using to name my branches
 
