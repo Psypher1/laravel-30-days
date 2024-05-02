@@ -18,6 +18,10 @@ It is structured like this:
 
 8. Intro to Migrations
 9. Meet Eloquent
+10. Factories
+11. Two Key Eloquent Relationship Types
+
+For day 11, we'll focus exclusively on two Eloquent rel
 
 The lesson numbers is what I am using to name my branches
 
