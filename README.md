@@ -20,8 +20,10 @@ It is structured like this:
 9. Meet Eloquent
 10. Factories
 11. Two Key Eloquent Relationship Types
+12. Pivot tables / BelongsToMany
+13. Eager Loading and the N+1 Problem
 
-For day 11, we'll focus exclusively on two Eloquent rel
+Lazy loading is useful, but, if you're not careful, it ca
 
 The lesson numbers is what I am using to name my branches
 

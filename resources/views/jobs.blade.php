@@ -6,15 +6,16 @@
         Jobs
     </x-slot:heading>
 
-    <section class="">
+    <section class="mt-12">
         <ul class="grid grid-cols-3 gap-8">
 
             @foreach ($jobs as $job)
-                <li class="border border-gray-400 p-4 rounded">
-                    <a href="/jobs/{{ $job['id'] }}" class="text-xl hover:underline text-blue-700">
-                        <b>{{ $job['title'] }}</b>
+               
+                    <a href="/jobs/{{ $job['id'] }}" class="text-xl border border-gray-300 p-5 rounded hover:shadow-md">
+                        <span class="text-sm text-gray-600">{{ $job->employer->name }} </span>
+                        <h3 class="text-blue-600 font-bold">{{ $job['title'] }}</h3>
+                        <p class="text-base"> Pays {{ $job['salary'] }} per year</p>
                     </a>
-                    <p class="text-base"> Pays {{ $job['salary'] }} per year</p>
                 </li>
             @endforeach
         </ul>
