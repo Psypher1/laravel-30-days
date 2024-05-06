@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 
 
@@ -17,6 +18,12 @@ class Job extends Model
     {
 
         return $this->belongsTo(Employer::class);
+    }
+
+    public function tags()
+    {
+        // we do this because we have a different name for our job column, laravel expeces job_id
+        return $this->belongsToMany(Tag::class, foreignPivotKey: 'job_listing_id');
     }
 
     // public static function all(): array
