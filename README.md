@@ -22,6 +22,7 @@ It is structured like this:
 11. Two Key Eloquent Relationship Types
 12. Pivot tables / BelongsToMany
 13. Eager Loading and the N+1 Problem
+14. All You Need to Know About Pagination
 
 Lazy loading is useful, but, if you're not careful, it ca
 

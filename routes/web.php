@@ -59,7 +59,9 @@ Route::get('/', function () {
 // can return string, or array
 Route::get('/jobs', function () {
 
-    $jobs = Job::with('employer')->get();
+    // $jobs = Job::with('employer')->paginate(4);
+    $jobs = Job::with('employer')->simplePaginate(4);
+    // $jobs = Job::with('employer')->cursorPaginate(4);
 
     return view('jobs', [
         'jobs' => $jobs
@@ -70,8 +72,7 @@ Route::get('/jobs', function () {
 
 Route::get('/jobs/{id}', function ($id) {
 
-    // this is a closure, no access to $id
-
+    // this is a closure, no access to $id so use is enlisted
     // \Illuminate\Support\Arr::first($jobs, funcion($job) use ($id){
     //     return $job['id'] == $id
     // })

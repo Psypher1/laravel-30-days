@@ -20,4 +20,7 @@
             @endforeach
         </ul>
     </section>
+    <div>
+        {{ $jobs->links() }}
+    </div>
 </x-layout>
