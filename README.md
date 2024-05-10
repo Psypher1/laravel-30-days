@@ -23,6 +23,7 @@ It is structured like this:
 12. Pivot tables / BelongsToMany
 13. Eager Loading and the N+1 Problem
 14. All You Need to Know About Pagination
+15. Understanding DB Seeders
 
 Lazy loading is useful, but, if you're not careful, it ca
 
