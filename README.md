@@ -25,7 +25,9 @@ It is structured like this:
 14. All You Need to Know About Pagination
 15. Understanding DB Seeders
 
-Lazy loading is useful, but, if you're not careful, it ca
+-   Section 03: Forms
+
+16. Forms & CSRF explained
 
 The lesson numbers is what I am using to name my branches
 
