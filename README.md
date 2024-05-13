@@ -28,6 +28,7 @@ It is structured like this:
 -   Section 03: Forms
 
 16. Forms & CSRF explained
+17. Always Validate. Never Trust User.
 
 The lesson numbers is what I am using to name my branches
 
