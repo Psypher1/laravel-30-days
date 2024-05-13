@@ -56,7 +56,7 @@ Route::get('/', function () {
 });
 
 
-// can return string, or array
+// Index can return string, or array
 Route::get('/jobs', function () {
 
     // $jobs = Job::with('employer')->paginate(4);
@@ -68,10 +68,12 @@ Route::get('/jobs', function () {
     ]);
 });
 
+// Create
 Route::get('/jobs/create', function () {
     return view('jobs.create');
 });
 
+// Store
 Route::post('/jobs', function () {
     request()->validate([
         'title' => ['required', 'min:3'],
@@ -87,6 +89,7 @@ Route::post('/jobs', function () {
     return redirect('/jobs');
 });
 
+// Show
 Route::get('/jobs/{id}', function ($id) {
 
     // this is a closure, no access to $id so use is enlisted
@@ -100,6 +103,57 @@ Route::get('/jobs/{id}', function ($id) {
     // dd($job);
     return view('jobs.show', ['job' => $job]);
 });
+
+
+// Edit
+Route::get('/jobs/{id}/edit', function ($id) {
+
+    $job = Job::find($id);
+
+    return view('jobs.edit', ['job' => $job]);
+});
+
+
+// Update
+Route::patch('/jobs/{id}', function ($id) {
+
+    // validate
+    request()->validate([
+        'title' => ['required', 'min:3'],
+        'salary' => ['required'],
+    ]);
+
+    // authorise (on hold...)
+
+    // update job
+    $job = Job::findOrFail($id);
+
+
+
+    $job->update([
+        'title' => request('title'),
+        'salary' => request('salary'),
+    ]);
+
+    // redirect to updated job
+    return redirect('/jobs/' . $job->id);
+});
+
+// Destroy
+Route::delete('/jobs/{id}', function ($id) {
+    // authorise (on hold...)
+    // delete job
+    $job = Job::findOrFail($id);
+    $job->delete();
+
+    // Job::findOrFail($id)->delete();
+
+    // redirect
+    return redirect('/jobs');
+});
+
+
+
 
 Route::get('/about', function () {
     return view('about');
