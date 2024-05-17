@@ -134,6 +134,13 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+
+// GROUP
 // Route::controller(JobController::class)->group(function () {
 //     Route::get('/', 'index');
 // });
+
+// // RESOURCE
+// Route::resource('jobs', JobController::class, [
+//     'only' => ['index', 'show', 'create']
+// ]);
