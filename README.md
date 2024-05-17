@@ -32,6 +32,11 @@ It is structured like this:
 18. Edit, Update, Delete
 19. Routes Reload
 
+- Section 04: Authentication
+
+20. Starter Kits - Breeze, and Middlware
+21. 
+
 The lesson numbers is what I am using to name my branches
 
 ## Learning Resources
