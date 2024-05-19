@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\RegisterUserController;
+use App\Http\Controllers\SessionController;
 use App\Models\Teacher;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
@@ -144,3 +146,11 @@ Route::get('/contact', function () {
 // Route::resource('jobs', JobController::class, [
 //     'only' => ['index', 'show', 'create']
 // ]);
+
+
+//  AUTHENTICATION
+Route::get('/register', [RegisterUserController::class, 'create']);
+Route::post('/register', [RegisterUserController::class, 'store']);
+
+Route::get('/login', [SessionController::class, 'create']);
+Route::post('/login', [SessionController::class, 'store']);
