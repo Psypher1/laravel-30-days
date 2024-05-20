@@ -35,7 +35,8 @@ It is structured like this:
 - Section 04: Authentication
 
 20. Starter Kits - Breeze, and Middlware
-21. 
+21. Login/Register - Markup
+22. Login/Register - Functionality
 
 The lesson numbers is what I am using to name my branches
 
