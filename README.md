@@ -37,6 +37,7 @@ It is structured like this:
 20. Starter Kits - Breeze, and Middlware
 21. Login/Register - Markup
 22. Login/Register - Functionality
+23. 6 Steps to Auth Mastery
 
 The lesson numbers is what I am using to name my branches
 
