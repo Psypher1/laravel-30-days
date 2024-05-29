@@ -51,7 +51,9 @@ class JobController extends Controller
         //     dd('can edit job');
         // }
 
-        Gate::authorize('edit-job', $job);
+
+        // with middlewaare added
+        // Gate::authorize('edit-job', $job);
 
 
         // Gate::define('edit-job', function (User $user, Job $job) {

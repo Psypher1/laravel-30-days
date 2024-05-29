@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:title>
-        Create Job
+        {{ $job->title }}
     </x-slot:title>
     <x-slot:heading>
         Job
