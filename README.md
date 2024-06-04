@@ -38,6 +38,7 @@ It is structured like this:
 21. Login/Register - Markup
 22. Login/Register - Functionality
 23. 6 Steps to Auth Mastery
+24. Emails
 
 The lesson numbers is what I am using to name my branches
 

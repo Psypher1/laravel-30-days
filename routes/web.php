@@ -3,11 +3,19 @@
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SessionController;
+use App\Mail\JobPosted;
 use App\Models\Teacher;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
 use App\Models\Job;
 
+// Route::get('test', function () {
+//     // return new JobPosted();
+//     Mail::to("jamesmidzi@gmail.com")->send(new JobPosted());
+
+//     return "Done";
+// });
 
 // declare route that listens for a get request to the home page
 // in response , if visited, trigger a funciton that returns a view called homw
