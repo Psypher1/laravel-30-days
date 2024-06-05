@@ -3,6 +3,7 @@
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SessionController;
+use App\Jobs\TranslateJob;
 use App\Mail\JobPosted;
 use App\Models\Teacher;
 use Illuminate\Support\Facades\Mail;
@@ -16,6 +17,18 @@ use App\Models\Job;
 
 //     return "Done";
 // });
+
+Route::get('test', function () {
+    $job = Job::first();
+
+    TranslateJob::dispatch($job);
+
+    // dispatch(function () {
+    //     logger("hello from queue");
+    // });
+
+    return "Done";
+});
 
 // declare route that listens for a get request to the home page
 // in response , if visited, trigger a funciton that returns a view called homw
