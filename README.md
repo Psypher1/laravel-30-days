@@ -41,8 +41,9 @@ It is structured like this:
 
 - Section 05: Digging Deeper
   
-24.  Emails
-25.  Queue
+24.  Emails and Mailable Classes
+25.  Queue Are Easier than 
+26.  Build Process in Order
 
 The lesson numbers is what I am using to name my branches
 
