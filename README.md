@@ -45,6 +45,9 @@ It is structured like this:
 25.  Queue Are Easier than 
 26.  Build Process in Order
 
+
+Going forward, it's the final project - I have placed that in another repo
+
 The lesson numbers is what I am using to name my branches
 
 ## Learning Resources
