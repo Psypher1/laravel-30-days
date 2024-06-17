@@ -46,7 +46,7 @@ It is structured like this:
 26.  Build Process in Order
 
 
-Going forward, it's the final project - I have placed that in another repo
+Going forward, it's the final project - I have placed that in the [final project repo](https://github.com/Psypher1/pixel-positions)
 
 The lesson numbers is what I am using to name my branches
 
